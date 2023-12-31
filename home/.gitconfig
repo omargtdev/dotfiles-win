@@ -1,0 +1,42 @@
+[init]
+    defaultBranch = main
+[user]
+    name = Omar Gutierrez
+    email = omargdev@gmail.com
+# Current company
+[includeIf "gitdir:~/repos/juntoz/**/"]
+    path = ~/repos/juntoz/.gitconfig
+[core]
+    editor = nvim
+[alias]
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    s = status -sb
+    c = commit -m
+    cb = !pwsh -c '~/.git-commands/change-branch.ps1'
+    b = branch
+    bn = rev-parse --abbrev-ref HEAD
+# Install delta for this features
+# Repo : https://github.com/dandavison/delta 
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+[delta]
+    features = decorations
+    line-numbers = true
+    side-by-side = true
+[delta "interactive"]
+    keep-plus-minus-markers = false
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+# Use scoop for install github cli
+[credential "https://github.com"]
+    helper = !~/scoop/shims/gh.exe auth git-credential
+[credential "https://gist.github.com"]
+    helper = !~/scoop/shims/gh.exe auth git-credential

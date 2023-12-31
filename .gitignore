@@ -1,0 +1,3 @@
+# Powershell
+pwsh/temp_scripts/*
+!pwsh/temp_scripts/.gitkeep
