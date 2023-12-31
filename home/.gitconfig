@@ -2,7 +2,7 @@
     defaultBranch = main
 [user]
     name = Omar Gutierrez
-    email = omargdev@gmail.com
+    email = omargtdev@gmail.com
 # Current company
 [includeIf "gitdir:~/repos/juntoz/**/"]
     path = ~/repos/juntoz/.gitconfig
