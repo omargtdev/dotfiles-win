@@ -102,7 +102,7 @@ $configFile = 'settings.json'
 $target = Join-Path $baseDir $configFile
 
 # Get hack nerd font
-Setup-HackNerdFont
+#Setup-HackNerdFont
 
 # Backup
 Write-Host "[INFO]: Making backup of current config."

@@ -129,12 +129,7 @@
     {
         "defaults": 
         {
-            "colorScheme": "GruvboxDarkHard",
-            "font": 
-            {
-                "face": "Hack Nerd Font Mono",
-                "size": 10.0
-            }
+            "colorScheme": "MaterialDark"
         },
         "list": 
         [
